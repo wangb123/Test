@@ -1,14 +1,17 @@
-package org.wbing.test;
+package org.wbing.test.interpolator;
 
 import android.animation.Animator;
-import android.animation.ValueAnimator;
-import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.TextView;
+
+import org.wbing.test.R;
+
+/**
+ * 三阶贝塞尔曲线应用
+ * 获取曲线数值的工具网站：cubic-bezier.com
+ */
 
 public class InterpolatorActivity extends AppCompatActivity {
 
@@ -27,7 +30,7 @@ public class InterpolatorActivity extends AppCompatActivity {
                 int[] location2 = new int[2];
                 findViewById(R.id.button).getLocationOnScreen(location2);
 
-                dX = location2[0] - location[0]+(findViewById(R.id.button).getWidth()-findViewById(R.id.text).getWidth())/2;
+                dX = location2[0] - location[0] + (findViewById(R.id.button).getWidth() - findViewById(R.id.text).getWidth()) / 2;
                 dY = location2[1] - location[1];
             }
 
@@ -62,7 +65,7 @@ public class InterpolatorActivity extends AppCompatActivity {
             findViewById(R.id.text).setX(0);
 
             count++;
-            ((TextView)findViewById(R.id.button)).setText(String.valueOf(count));
+            ((TextView) findViewById(R.id.button)).setText(String.valueOf(count));
 
         }
 
@@ -82,7 +85,7 @@ public class InterpolatorActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_interpolator);
         findViewById(R.id.button).setOnClickListener(onClickListener);
     }
 

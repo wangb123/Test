@@ -1,4 +1,4 @@
-package org.wbing.test;
+package org.wbing.test.interpolator;
 
 import android.graphics.PointF;
 import android.view.animation.Interpolator;
