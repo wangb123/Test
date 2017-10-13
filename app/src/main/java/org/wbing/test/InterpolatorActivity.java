@@ -10,14 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class InterpolatorActivity extends AppCompatActivity {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        findViewById(R.id.button).setOnClickListener(onClickListener);
-    }
 
     int dX;
     int dY;
@@ -84,4 +78,12 @@ public class MainActivity extends AppCompatActivity {
             findViewById(R.id.text).setX(0);
         }
     };
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        findViewById(R.id.button).setOnClickListener(onClickListener);
+    }
+
 }
