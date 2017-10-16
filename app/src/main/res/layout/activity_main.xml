@@ -15,12 +15,20 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/interpolator"
+            android:id="@+id/interpolator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:tag="@string/interpolator"
+            android:text="@string/interpolator" />
+
+            <Button
+                android:id="@+id/refresh"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="onClick"
-                android:tag="@string/interpolator"
-                android:text="@string/interpolator" />
+                android:tag="@string/refresh"
+                android:text="@string/refresh" />
 
         </LinearLayout>
     </ScrollView>

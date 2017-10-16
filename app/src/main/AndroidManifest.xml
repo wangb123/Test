@@ -9,7 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity android:name=".main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -26,9 +25,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".interpolator.InterpolatorActivity">
-
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
@@ -37,6 +34,17 @@
 
                 <data android:scheme="wb" />
                 <data android:host="interpolator" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".refresh.RefreshActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="wb" />
+                <data android:host="refresh" />
             </intent-filter>
         </activity>
     </application>
