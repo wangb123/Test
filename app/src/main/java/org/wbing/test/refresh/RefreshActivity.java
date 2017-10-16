@@ -58,7 +58,7 @@ public class RefreshActivity extends AppCompatActivity {
     }
 
 
-    class Holder extends RecyclerView.ViewHolder {
+   public static class Holder extends RecyclerView.ViewHolder {
 
         TextView textView;
 
